@@ -1,0 +1,103 @@
+/* Estilo para o logotipo no header */
+.logo {
+    max-width: 60px;
+    height: auto;
+}
+
+/* Configurações para o tamanho das seções */
+.section-hero {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-info {
+    height: 80vh;
+}
+
+/* Estilo para imagem flutuante à direita nas seções 2 e 4 */
+.section-image {
+    max-width: 60%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: -2px;
+}
+
+/* Estilo para o footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-logo {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Ajustes de cores médicas */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.bg-light {
+    background-color: #f2f8fb !important;
+}
+
+.btn-primary {
+    background-color: #39c42d;
+    border: none;
+    width: 150px;
+    height: 38px;
+}
+
+/* Estilos para os cards */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #39c42d;
+}
+
+/* Estilos para ícones nos cards */
+.icon {
+    font-size: 2rem;
+    color: #39c42d;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o texto das seções com imagem */
+.text-container {
+    max-width: 50%;
+}
