@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white flex items-center justify-center h-full p-5">
+
+    <div class="container shadow-lg bg-white rounded-md max-w-2xl p-4">
+        <h2 class="text-center text-2xl font-bold mb-4 text-indigo-700">Cadastrar Perfil</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome-perfil" class="form-label">Nome do Perfil</label>
+                <input type="text" id="nome-perfil" class="form-control" placeholder="Nome do perfil">
+            </div>
+            <h4 class="text-lg font-semibold mb-3 text-indigo-600">Permissões</h4>
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Exemplo de permissões para a categoria Funcionário -->
+                <div>
+                    <label class="form-label">Funcionário</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="funcionario-cadastrar">
+                        <label class="form-check-label" for="funcionario-cadastrar">Cadastrar</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="funcionario-ler">
+                        <label class="form-check-label" for="funcionario-ler">Ler</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="funcionario-atualizar">
+                        <label class="form-check-label" for="funcionario-atualizar">Atualizar</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="funcionario-deletar">
+                        <label class="form-check-label" for="funcionario-deletar">Deletar</label>
+                    </div>
+                </div>
+                <!-- Repetir blocos para cada categoria (Paciente, Consulta, etc.) -->
+            </div>
+            <div class="flex justify-end space-x-3 mt-4">
+                <button type="button" class="btn btn-secondary" onclick="window.history.back()">Cancelar</button>
+                <button type="submit" class="btn btn-success" onclick="confirm('Perfil cadastrado com sucesso!')">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Paciente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white flex items-center justify-center h-full">
+
+    <div class="container p-5 shadow-lg bg-white rounded-md max-w-2xl">
+        <h2 class="text-center text-2xl font-bold mb-4 text-green-700">Cadastrar Paciente</h2>
+        <form>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="mb-3">
+                    <label for="nome-paciente" class="form-label">Nome</label>
+                    <input type="text" id="nome-paciente" class="form-control" placeholder="Nome completo">
+                </div>
+                <div class="mb-3">
+                    <label for="idade-paciente" class="form-label">Idade</label>
+                    <input type="number" id="idade-paciente" class="form-control" placeholder="Idade">
+                </div>
+                <div class="mb-3">
+                    <label for="sexo-paciente" class="form-label">Sexo</label>
+                    <select id="sexo-paciente" class="form-control">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="cpf-paciente" class="form-label">CPF</label>
+                    <input type="text" id="cpf-paciente" class="form-control" placeholder="CPF">
+                </div>
+                <div class="mb-3">
+                    <label for="rua-paciente" class="form-label">Rua</label>
+                    <input type="text" id="rua-paciente" class="form-control" placeholder="Rua">
+                </div>
+                <div class="mb-3">
+                    <label for="numero-paciente" class="form-label">Número</label>
+                    <input type="text" id="numero-paciente" class="form-control" placeholder="Número">
+                </div>
+                <div class="mb-3">
+                    <label for="complemento-paciente" class="form-label">Complemento</label>
+                    <input type="text" id="complemento-paciente" class="form-control" placeholder="Complemento">
+                </div>
+                <div class="mb-3">
+                    <label for="bairro-paciente" class="form-label">Bairro</label>
+                    <input type="text" id="bairro-paciente" class="form-control" placeholder="Bairro">
+                </div>
+                <div class="mb-3">
+                    <label for="cidade-paciente" class="form-label">Cidade</label>
+                    <input type="text" id="cidade-paciente" class="form-control" placeholder="Cidade">
+                </div>
+                <div class="mb-3">
+                    <label for="estado-paciente" class="form-label">Estado</label>
+                    <input type="text" id="estado-paciente" class="form-control" placeholder="Estado">
+                </div>
+                <div class="mb-3">
+                    <label for="contato-paciente" class="form-label">Contato</label>
+                    <input type="text" id="contato-paciente" class="form-control" placeholder="Contato">
+                </div>
+                <div class="mb-3">
+                    <label for="email-paciente" class="form-label">Email</label>
+                    <input type="email" id="email-paciente" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3 col-span-2">
+                    <label for="data-nascimento-paciente" class="form-label">Data de Nascimento</label>
+                    <input type="date" id="data-nascimento-paciente" class="form-control">
+                </div>
+            </div>
+            <div class="flex justify-end space-x-3 mt-4">
+                <button type="button" class="btn btn-secondary" onclick="window.history.back()">Cancelar</button>
+                <button type="submit" class="btn btn-success" onclick="confirm('Paciente cadastrado com sucesso!')">Salvar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

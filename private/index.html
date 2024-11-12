@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Administração</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos globais */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .navbar, .sidebar {
+            background-color: #28a745;
+        }
+        .navbar-brand, .nav-link, .sidebar a {
+            color: white !important;
+        }
+        .sidebar {
+            min-height: 100vh;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: block;
+            color: #ffffff;
+        }
+        .sidebar a:hover {
+            background-color: #218838;
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar a.active {
+            background-color: #1e7e34;
+            color: white;
+        }
+        .main-content {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .main-content h1 {
+            color: #28a745;
+            font-weight: 600;
+        }
+        .btn-logout {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            transition: background-color 0.2s;
+        }
+        .btn-logout:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Administração</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="btn btn-logout nav-link" onclick="logout()">Sair</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container principal -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Barra lateral -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Consultas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Convênios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Especialidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Funcionários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perfis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prontuário</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Conteúdo principal -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <div class="main-content">
+                    <h1>Bem-vindo à Administração</h1>
+                    <p>Selecione uma das opções do menu ao lado para gerenciar informações do sistema.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function logout() {
+            // Redirecionar para a página de login ou executar a lógica de logout
+            alert('Você foi desconectado.');
+        }
+    </script>
+</body>
+</html>
